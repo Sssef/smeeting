@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index-media.css" />
+    <link rel="stylesheet" href="./css/main-page.css" />
+    <link rel="stylesheet" href="./css/main-page-media.css" />
+    <link rel="stylesheet" href="./css/burgerMenuStyle.css" />
+    <script src="./js/burgerMenuScript.js" defer></script>
+    <title>SECRETMEETING</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container flex-container">
+        <a class="logo" href="/">SECRETMEETING</a>
+
+        <nav class="menu">
+          <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="#about-section">О нас</a></li>
+            <li><a href=".//meeting.html">Новая встреча</a></li>
+          </ul>
+        </nav>
+        <img class="burger-button" src="./img/burgerButton.svg" alt="burgerButton" />
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main-section flex flex-column">
+        <div class="container">
+          <ul class="tags">
+            <li>#Легко организуйте встречу</li>
+            <li>#Полная конфиденциальность</li>
+            <li>#Комфорт для всех участников</li>
+          </ul>
+
+          <div class="content-wrapper flex flex-column">
+            <div class="main-title-container flex flex-column">
+              <h1 class="main-title"><span>SECRET</span>MEETING</h1>
+              <h3 class="main-subtitle">Загадочные встречи</h3>
+            </div>
+
+            <div class="main-content-container flex flex-column">
+              <p class="main-text">
+                Добро пожаловать на&nbsp;SecretMeeting&nbsp;&mdash; вашу платформу для организации увлекательных
+                и&nbsp;загадочных встреч. Здесь вы&nbsp;сможете безопасно и&nbsp;анонимно собрать пожелания
+                и&nbsp;ограничения всех участников для незабываемых встреч формата МЖМ, МЖЖ и&nbsp;многих других.
+                Никакой регистрации и&nbsp;личных данных&nbsp;&mdash; только тайны и&nbsp;удовольствие!
+              </p>
+
+              <a href="./meeting.html" target="_blank">
+                <button class="btn btn-accent">Создать встречу</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="main-image">
+            <picture class="">
+              <source media="(max-width: 699px)" srcset="./img/main_image_mobile.jpg" type="image/jpeg" />
+              <source media="(min-width: 700px)" srcset="./img/main_image.jpg" type="image/jpeg" />
+              <img class="responsive-img" src="./img/main_image.jpg" alt="main_image" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="description-section flex flex-column">
+        <div class="container content-gap flex flex-column">
+          <div class="content-wrapper">
+            <div class="section-header">
+              <h2 class="section-title">Как это работает?</h2>
+              <h3 class="section-subtitle">Этапы создания</h3>
+            </div>
+          </div>
+
+          <div class="section-content">
+            <ul class="description-steps flex flex-column">
+              <li class="step">
+                <span class="step-number">01</span>
+                <h4 class="step-header">Создай встречу</h4>
+                <p class="step-content">
+                  Начните своё приключение с&nbsp;создания встречи. Укажите имена и&nbsp;пол участников, а&nbsp;также
+                  выберите интересующие вопросы из&nbsp;нашей коллекции.
+                </p>
+              </li>
+              <li class="step">
+                <span class="step-number">02</span>
+                <h4 class="step-header">Перешлите участникам</h4>
+                <p class="step-content">
+                  Мы&nbsp;создадим индивидуальные ссылки для каждого участника. Они смогут ответить на&nbsp;вопросы
+                  одним кликом, используя только &laquo;Да&raquo; и&nbsp;&laquo;Нет&raquo;.
+                </p>
+              </li>
+
+              <li class="step">
+                <span class="step-number">03</span>
+                <h4 class="step-header">Просматривайте результаты</h4>
+                <p class="step-content">
+                  Как только все ответят, вы&nbsp;получите уведомление и&nbsp;сможете посмотреть результаты.
+                  Удивительная таблица с&nbsp;ответами всех участников поможет вам понять, на&nbsp;что все готовы.
+                </p>
+              </li>
+              <li class="step">
+                <span class="step-number">04</span>
+                <h4 class="step-header">Планируйте встречу</h4>
+                <p class="step-content">
+                  Теперь у&nbsp;вас есть все необходимые данные для планирования вашей загадочной встречи.
+                  <br />
+                  Вперёд, к&nbsp;новым приключениям!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section flex flex-column" id="about-section">
+        <div class="container content-gap flex flex-column">
+          <div class="content-wrapper">
+            <div class="section-header">
+              <ul class="tags">
+                <li class="inver-text-color">#Мы не&nbsp;используем никакую авторизацию</li>
+              </ul>
+              <h2 class="section-title inver-text-color">Анонимность</h2>
+              <h3 class="section-subtitle inver-text-color">Наш приоритет</h3>
+            </div>
+          </div>
+
+          <div class="content-wrapper about-content-container">
+            <p class="inver-text-color content-container">
+              В&nbsp;SecretMeeting мы&nbsp;ценим вашу анонимность и&nbsp;конфиденциальность. У&nbsp;нас нет
+              необходимости в&nbsp;регистрации, номерах телефонов или адресах электронной почты. Мы&nbsp;не&nbsp;будем
+              задавать непристойных вопросов и&nbsp;не&nbsp;будем нарушать вашу частную жизнь. Все, что
+              мы&nbsp;делаем,&nbsp;&mdash; это помогаем вам планировать встречи исключительно на&nbsp;ваших условиях.
+              И&nbsp;самое лучшее&nbsp;&mdash; все услуги абсолютно бесплатны!
+            </p>
+          </div>
+          <div class="content-wrapper about-section-btn-wrapper">
+            <a href="./meeting.html" target="_blank">
+              <button class="btn btn-accent">Создать встречу</button>
+            </a>
+          </div>
+
+          <div class="about-section-images flex flex-between">
+            <picture class="">
+              <source media="(max-width: 479px)" srcset="./img/about_image1_mobile.jpg" type="image/jpeg" />
+              <source media="(min-width: 480px)" srcset="./img/about_image1.jpg" type="image/jpeg" />
+              <img class="responsive-img" src="./img/about_image1.jpg" alt="main_image" />
+            </picture>
+
+            <picture class="">
+              <source media="(max-width: 479px)" srcset="./img/about_image2_mobile.jpg" type="image/jpeg" />
+              <source media="(min-width: 480px)" srcset="./img/about_image2.jpg" type="image/jpeg" />
+              <img class="responsive-img" src="./img/about_image2.jpg" alt="main_image" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="organization-section flex flex-column">
+        <div class="container content-gap flex flex-column">
+          <div class="content-wrapper">
+            <div class="section-header text-left">
+              <ul class="tags">
+                <li class="">#Мы не&nbsp;используем никакую авторизацию</li>
+              </ul>
+              <h3 class="section-subtitle">Быстрая</h3>
+              <h2 class="section-title">Организация</h2>
+            </div>
+          </div>
+
+          <div class="content-wrapper organization-content-container">
+            <p class="content-container">
+              SecretMeeting&nbsp;&mdash; это ваш ключ к&nbsp;увлекательным и&nbsp;загадочным встречам без лишних хлопот.
+              Забудьте о&nbsp;неудобствах и&nbsp;бесконечных организационных вопросах. Мы&nbsp;делаем все за&nbsp;вас,
+              чтобы вы&nbsp;могли наслаждаться моментом. Доверьтесь нам, и&nbsp;каждая ваша встреча станет незабываемой.
+              Попробуйте сейчас и&nbsp;окунитесь в&nbsp;мир удовольствия и&nbsp;тайн с&nbsp;SecretMeeting!
+            </p>
+          </div>
+          <div class="content-wrapper organization-section-btn-wrapper">
+            <a href="./meeting.html" target="_blank">
+              <button class="btn btn-dark">Создать встречу</button>
+            </a>
+          </div>
+
+          <div class="organization-section-images flex flex-between">
+            <picture class="organization-image">
+              <source srcset="./img/organizationImageRed.png" type="image/jpeg" />
+              <img class="responsive-img" src="./img/organizationImageRed.png" alt="main_image" />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <span class="copyright">&copy;&nbsp;SecretMeeting 2023. Все права защищены</span>
+      </div>
+    </footer>
+
+    <div class="burger-menu">
+      <svg
+        class="burger-close"
+        xmlns="http://www.w3.org/2000/svg"
+        width="23"
+        height="20"
+        viewBox="0 0 23 20"
+        fill="none"
+      >
+        <path
+          d="M12.3622 0.189911H10.6377V9.24139H0.349609V10.7586H10.6377V19.8101H12.3622V10.7586H22.6504V9.24139H12.3622V0.189911Z"
+          fill="#767676"
+        />
+      </svg>
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="../index.html/#about-section">О нас</a></li>
+        <li><a href="..//meeting.html">Новая встреча</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

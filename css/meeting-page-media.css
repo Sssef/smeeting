@@ -1,0 +1,56 @@
+@media (width > 699px) {
+  .meeting {
+    .title {
+      margin-left: auto;
+    }
+  }
+
+  .members-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width < 700px) {
+  .meeting-questions-section {
+    .section-header {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+
+  .questions-control {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .questions-control-left {
+    flex-direction: row;
+    justify-content: space-between;
+    span {
+      text-align: right;
+    }
+  }
+  .send-question-button {
+    width: 100%;
+  }
+
+  .members-list {
+    grid-template-columns: 1fr;
+  }
+
+  .member-item {
+    min-height: 142px;
+  }
+  .member-item-empty {
+    &:not(:last-child) {
+      min-height: 142px;
+    }
+  }
+
+  .member-link-input {
+    width: 45%;
+  }
+  .link-button {
+    width: 55%;
+    justify-content: flex-start;
+  }
+}

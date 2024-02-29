@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./index-media.css" />
+    <link rel="stylesheet" href="./css/burgerMenuStyle.css" />
+    <link rel="stylesheet" href="./css/controls.css" />
+    <link rel="stylesheet" href="./css/control-radio.css" />
+    <link rel="stylesheet" href="./css/questions.css" />
+    <link rel="stylesheet" href="./css/questions-media.css" />
+    <script src="./js/questions.js" defer></script>
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/burgerMenuScript.js" defer></script>
+    <title>SECRETMEETING | Опрос</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container flex-container">
+        <a class="logo" href="/">SECRETMEETING</a>
+
+        <nav class="menu">
+          <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="./index.html#about-section">О нас</a></li>
+            <li><a href="./meeting.html">Новая встреча</a></li>
+          </ul>
+        </nav>
+        <img class="burger-button" src="./img/burgerButton.svg" alt="burgerButton" />
+      </div>
+    </header>
+
+    <main class="questions-page">
+      <section class="questions-section">
+        <div class="container">
+          <div class="questions-content flex flex-between">
+            <div class="questions">
+              <div data-questionNumber="0" class="question active-question">
+                <div class="slider-container" id="slides-container">
+                  <div class="question-number">
+                    <span class="current-question">1</span> / <span class="question-count">3</span>
+                  </div>
+
+                  <ul class="slider">
+                    <li class="slide">
+                      <p class="question-text">Что вас больше всего удивило когда‑либо в данном месте?</p>
+                      <div class="control-group flex flex-column">
+                        <label class="control control-radio">
+                          Да
+                          <input type="radio" name="radio" checked="checked" />
+                          <div class="control_indicator"></div>
+                        </label>
+
+                        <label class="control control-radio">
+                          Нет
+                          <input type="radio" name="radio" />
+                          <div class="control_indicator"></div>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="slide">
+                      <p class="question-text">Что вас больше всего удивило когда‑либо в данном месте?</p>
+                      <div class="control-group flex flex-column">
+                        <label class="control control-radio">
+                          Да
+                          <input type="radio" name="radio" checked="checked" value="Да" />
+                          <div class="control_indicator"></div>
+                        </label>
+
+                        <label class="control control-radio">
+                          Нет
+                          <input type="radio" name="radio" value="Нет" />
+                          <div class="control_indicator"></div>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="slide">
+                      <p class="question-text">Что вас больше всего удивило когда‑либо в данном месте?</p>
+                      <div class="control-group flex flex-column">
+                        <label class="control control-radio">
+                          Да
+                          <input type="radio" name="radio" checked="checked" />
+                          <div class="control_indicator"></div>
+                        </label>
+
+                        <label class="control control-radio">
+                          Нет
+                          <input type="radio" name="radio" />
+                          <div class="control_indicator"></div>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="slide">
+                      <p class="question-text">Что вас больше всего удивило когда‑либо в данном месте?</p>
+                      <div class="control-group flex flex-column">
+                        <label class="control control-radio">
+                          Да
+                          <input type="radio" name="radio" checked="checked" />
+                          <div class="control_indicator"></div>
+                        </label>
+
+                        <label class="control control-radio">
+                          Нет
+                          <input type="radio" name="radio" />
+                          <div class="control_indicator"></div>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="slider-controls">
+                    <div class="question-control">
+                      <div class="prev-button slide-arrow" id="slide-arrow-prev">
+                        <svg
+                          class="prev-arrow unnactive"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="41"
+                          height="8"
+                          viewBox="0 0 41 8"
+                          fill="none"
+                        >
+                          <path
+                            d="M0.646446 4.35355C0.451183 4.15829 0.451183 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM41 4.5H1V3.5H41V4.5Z"
+                            fill="#767676"
+                          />
+                        </svg>
+                        <span class="previous unnactive">Назад</span>
+                      </div>
+                      <span> / </span>
+                      <div class="next-button slide-arrow" id="slide-arrow-next">
+                        <span class="next active">Следующий</span>
+                        <svg
+                          class="next-arrow active"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="41"
+                          height="8"
+                          viewBox="0 0 41 8"
+                          fill="none"
+                        >
+                          <path
+                            d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"
+                            fill="#A11E2A"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="tags question-tags">
+                <li>#Нам важен честный ответ</li>
+                <li>#Анонимный ответ</li>
+              </ul>
+            </div>
+
+            <picture class="question-image">
+              <source media="(max-width: 699px)" srcset="./img/test_mobile.jpg" />
+              <source media="(min-width: 700px)" srcset="./img/test.jpg" />
+              <img src="./img/test.jpg" alt="questionImage" />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <span class="copyright">&copy;&nbsp;SecretMeeting 2023. Все права защищены</span>
+      </div>
+    </footer>
+
+    <div class="burger-menu">
+      <svg
+        class="burger-close"
+        xmlns="http://www.w3.org/2000/svg"
+        width="23"
+        height="20"
+        viewBox="0 0 23 20"
+        fill="none"
+      >
+        <path
+          d="M12.3622 0.189911H10.6377V9.24139H0.349609V10.7586H10.6377V19.8101H12.3622V10.7586H22.6504V9.24139H12.3622V0.189911Z"
+          fill="#767676"
+        />
+      </svg>
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="./index.html#about-section">О нас</a></li>
+        <li><a href="./meeting.html">Новая встреча</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--c-gray-300);
+  border: 1px solid var(--c-dark-100);
+  border-radius: 10px;
+  padding: 40px 20px;
+  top: 0;
+  right: 0;
+}
+.burger-menu-opened {
+  display: flex;
+}
+.burger-menu .burger-close {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.burger-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.burger-menu li {
+  list-style-type: none;
+}
+.burger-menu a {
+  color: var(--c-dark-100);
+  text-decoration: none;
+  font-size: var(--fs-text-t);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}

@@ -1,0 +1,53 @@
+.control {
+  color: var(--c-dark-100);
+  font-size: var(--fs-small);
+  font-style: normal;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  height: 20px;
+  padding-left: 30px;
+}
+.control_indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  background: var(--c-gray-400);
+  border: 1px solid var(--c-black);
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  background: var(--c-white);
+}
+
+.control input:checked ~ .control_indicator {
+  background: var(--c-white);
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+  background: var(--c-white);
+}
+.control input:disabled ~ .control_indicator {
+  background: var(--c-gray-300);
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control_indicator:after {
+  box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}

@@ -1,0 +1,37 @@
+@media (width < 700px) {
+  .questions-content {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .questions {
+    margin-top: 35px;
+  }
+
+  .question-image {
+    max-width: 340px;
+    right: 0;
+    align-self: center;
+    margin-top: 30px;
+  }
+  .questions-result-page {
+    .section-header {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (width > 699px) {
+  .questions-content {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  .questions {
+    margin-top: 50px;
+  }
+
+  .question-image {
+    right: -20px;
+    max-width: 299px;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./index-media.css" />
+    <link rel="stylesheet" href="./css/burgerMenuStyle.css" />
+    <link rel="stylesheet" href="./css/controls.css" />
+    <link rel="stylesheet" href="./css/control-radio.css" />
+    <link rel="stylesheet" href="./css/questions.css" />
+    <link rel="stylesheet" href="./css/questions-media.css" />
+    <script src="./js/questions.js" defer></script>
+    <script src="./js/burgerMenuScript.js" defer></script>
+    <title>SECRETMEETING | Результаты опроса</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container flex-container">
+        <a class="logo" href="/">SECRETMEETING</a>
+
+        <nav class="menu">
+          <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="./index.html#about-section">О нас</a></li>
+            <li><a href="./meeting.html">Новая встреча</a></li>
+          </ul>
+        </nav>
+        <img class="burger-button" src="./img/burgerButton.svg" alt="burgerButton" />
+      </div>
+    </header>
+
+    <main class="questions-result-page">
+      <section class="questions-section">
+        <div class="container">
+          <div class="questions-content flex flex-between">
+            <div class="questions">
+              <div data-questionNumber="3" class="question active-question">
+                <div class="question-number">
+                  <span class="current-question">3</span> / <span class="question-count">3</span>
+                </div>
+                <div class="section-header flex-column text-left">
+                  <h2 class="title">Спасибо!</h2>
+                  <h3 class="subtitle">Вы ответили на все вопросы</h3>
+                </div>
+              </div>
+            </div>
+
+            <picture class="question-image">
+              <source media="(max-width: 699px)" srcset="./img/resultEnd_mobile.jpg" />
+              <source media="(min-width: 700px)" srcset="./img/resultEnd.jpg" />
+              <img src="./img/resultEnd.jpg" alt="questionImage" />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <span class="copyright">&copy;&nbsp;SecretMeeting 2023. Все права защищены</span>
+      </div>
+    </footer>
+
+    <div class="burger-menu">
+      <svg
+        class="burger-close"
+        xmlns="http://www.w3.org/2000/svg"
+        width="23"
+        height="20"
+        viewBox="0 0 23 20"
+        fill="none"
+      >
+        <path
+          d="M12.3622 0.189911H10.6377V9.24139H0.349609V10.7586H10.6377V19.8101H12.3622V10.7586H22.6504V9.24139H12.3622V0.189911Z"
+          fill="#767676"
+        />
+      </svg>
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="./index.html#about-section">О нас</a></li>
+        <li><a href="./meeting.html">Новая встреча</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

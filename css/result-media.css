@@ -1,0 +1,20 @@
+@media (width < 700px) {
+  .result-table .question,
+  .negativeAnswer,
+  .positiveAnswer,
+  .header-secondRow th {
+    font-size: var(--fs-small);
+  }
+  .result-table td,
+  .result-table th {
+    padding: 5px;
+  }
+}
+@media (width < 600px) {
+  .result-table .question {
+    min-width: 140px;
+  }
+  .result-table td {
+    min-width: 100px;
+  }
+}

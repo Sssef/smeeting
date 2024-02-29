@@ -1,0 +1,158 @@
+@media (width < 700px) {
+  /* Main section styles */
+  .main-title-container {
+    align-self: flex-end;
+  }
+  .main-title-container,
+  .main-content-container,
+  .content-container {
+    max-width: 466px;
+  }
+  .main-content-container {
+    gap: 20px;
+  }
+  .main-image {
+    margin-top: 20px;
+  }
+
+  /* Description section styles */
+  .description-section {
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+  .description-steps {
+    gap: 30px;
+  }
+
+  .step {
+    grid-template-areas:
+      'number header header header header'
+      'content content content content content'
+      'content content content content content';
+    gap: 15px;
+    grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr;
+
+    &:nth-child(even) {
+      margin: 0;
+    }
+  }
+  .step-header {
+    grid-area: header;
+    white-space: normal;
+    align-self: end;
+  }
+
+  /* About section styles */
+  .about-section-btn-wrapper {
+    order: 2;
+
+    .btn {
+      max-width: 100%;
+    }
+  }
+
+  /* Organization section styles */
+  .organization-section {
+    padding-bottom: 5px;
+  }
+  .organization-image {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      width: 340px;
+      object-fit: cover;
+      height: 200px;
+    }
+  }
+
+  .organization-section-btn-wrapper {
+    .btn {
+      max-width: 100%;
+    }
+  }
+
+  .organization-section,
+  .about-section {
+    .tags {
+      margin-bottom: 13px;
+    }
+  }
+}
+
+@media (width > 699px) {
+  /* Main section styles */
+  .main-title-container {
+    align-self: flex-start;
+  }
+  .main-content-container {
+    gap: 30px;
+  }
+  .main-image {
+    margin-top: 30px;
+  }
+
+  /* Description section styles */
+  .description-section {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+  .description-steps {
+    gap: 20px;
+  }
+  .step {
+    align-items: flex-end;
+    gap: 10px;
+    grid-template-areas:
+      'number header header header'
+      'number content content content'
+      'number content content content';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    &:nth-child(even) {
+      margin-left: 75px;
+    }
+    &:nth-child(odd) {
+      margin-right: 75px;
+    }
+  }
+  .step-header {
+    align-self: start;
+  }
+
+  /* About section styles */
+  .about-section-btn-wrapper {
+    order: 0;
+
+    .btn {
+      max-width: 330px;
+    }
+  }
+
+  /* Organizationsection styles */
+  .organization-section {
+    padding-bottom: 15px;
+  }
+  .organization-section-images {
+    position: relative;
+  }
+  .organization-image {
+    position: absolute;
+    bottom: 30px;
+    left: -20px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 230px;
+    }
+  }
+  .organization-section-btn-wrapper {
+    .btn {
+      max-width: 330px;
+    }
+  }
+}
