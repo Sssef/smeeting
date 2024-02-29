@@ -41,7 +41,7 @@
     min-height: 142px;
   }
   .member-item-empty {
-    &:not(:last-child) {
+    &:not(:first-child) {
       min-height: 142px;
     }
   }
