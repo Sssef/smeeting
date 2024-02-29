@@ -157,6 +157,12 @@ ul {
   width: 100%;
   font-family: Helvetica, Arial, sans-serif;
   text-align: center;
+  display: block;
+  line-height: 50px;
+
+  &:visited {
+    color: var(--c-white);
+  }
 }
 .btn-accent {
   background-color: var(--c-accent-200);
